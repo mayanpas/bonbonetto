@@ -50,6 +50,47 @@ header {
   border-radius: 10rem;
 }
 
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+header .cart-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.75rem;
+  border: 2px solid transparent;
+  background: transparent;
+  color: #4a2c2a;
+  text-decoration: none;
+  font-size: 1.1rem;
+  position: relative;
+}
+
+header .cart-link:hover {
+  color: #a67c52;
+}
+
+header .cart-count {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  min-width: 1.2rem;
+  height: 1.2rem;
+  padding: 0 0.25rem;
+  background: #d4af37;
+  color: #fff;
+  border-radius: 999px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+}
+
 header .menu-toggle {
   /* background: #d4af37; */
   background-color: transparent;
@@ -68,6 +109,10 @@ header .header-title {
   font-size: 1.8em;
   margin: 0;
   color: #4a2c2a;
+}
+.menu-toggle, .cart-link{
+  display: flex;
+  gap: .5rem;
 }
 
 #hero {
@@ -236,11 +281,12 @@ header .menu-toggle:active {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 20px;
+  padding: 0 20px;
 }
 .sectionTitle {
   flex-basis: 100%;
   text-align: center;
+  padding: 20px;
 }
 .produto {
   display: flex;
@@ -328,15 +374,23 @@ footer {
   }
 }
 
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
   header .header-title {
     font-size: 1.5em;
   }
-}
+} */
 
 @media (max-width: 480px) {
   header {
     padding: 0.5rem 1rem;
+  }
+  .header-actions {
+    gap: 0.5rem;
+  }
+  header .cart-link {
+    width: 2rem;
+    height: 2rem;
+    font-size: 1rem;
   }
   #logo {
   }
@@ -381,8 +435,22 @@ footer {
   }
   .produto {
     width: auto;
-    margin: 15px 0;
+    margin: 5px 0;
   }
+  .sectionTitle {
+    padding-bottom: 1rem;
+  }
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.5s ease-out;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* Estilos aplicados APENAS quando a tela está na horizontal */
@@ -424,7 +492,7 @@ footer {
     padding: 0.7rem;
   }
   .produto {
-    width: auto;
-    margin: 15px 0;
+    /* width: auto; */
+    margin: 15px 5px;
   }
 }

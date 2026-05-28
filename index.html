@@ -28,13 +28,19 @@
           <img src="img/logo.jpeg" alt="" id="headerLogo" />
           <p>BONBONETTO</p>
         </a>
-        <button
-          class="menu-toggle"
-          aria-expanded="false"
-          aria-controls="sidebar"
-        >
-          ☰ Menu
-        </button>
+        <div class="header-actions">
+          <a href="carrinho.html" class="cart-link" aria-label="Ver carrinho">
+            <img src="img/sacola.svg" alt="" class="icon">
+            <span class="cart-count" aria-hidden="true">0</span>
+          </a>
+          <button
+            class="menu-toggle"
+            aria-expanded="false"
+            aria-controls="sidebar"
+          >
+            <img src="img/menu.svg" alt="" class="icon"> Menu
+          </button>
+        </div>
       </header>
 
       <aside id="sidebar" class="sidebar">
@@ -69,7 +75,11 @@
           <a href="#fatias" class="adicionarSacola hidden" id="verProdutos"
             >Ver produtos</a
           >
-          <a href="https://wa.me/5531990787741" class="adicionarSacola hidden" id="whatsapp" target="_blank"
+          <a
+            href="https://wa.me/5531990787741"
+            class="adicionarSacola hidden"
+            id="whatsapp"
+            target="_blank"
             >WhatsApp</a
           >
           <a href="#footer" class="adicionarSacola hidden" id="contato"

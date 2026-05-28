@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrinho | Bonbonetto</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/carrinho.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/lenis@1.3.23/dist/lenis.css"
+    />
+    <script src="https://unpkg.com/lenis@1.3.23/dist/lenis.min.js"></script>
+    <script>
+      new Lenis({
+        autoRaf: true,
+        autoToggle: true,
+        anchors: true,
+        allowNestedScroll: true,
+        naiveDimensions: true,
+        stopInertiaOnNavigate: true,
+      });
+    </script>
+  </head>
+  <body>
+    <header>
+      <a href="index.html#hero" id="headerLogoDiv">
+        <img src="img/logo.jpeg" alt="" id="headerLogo" />
+        <p>BONBONETTO</p>
+      </a>
+      <div class="header-actions">
+        <a href="carrinho.html" class="cart-link" aria-label="Ver carrinho">
+          <img src="img/sacola.svg" alt="" class="icon" />
+          <span class="cart-count" aria-hidden="true">0</span>
+        </a>
+      </div>
+    </header>
+
+    <main class="cart-page">
+      <h1>Meu Carrinho</h1>
+      <div class="cart-content">
+        <!-- <div id="emptyCartMessage" class="empty-cart">
+          Seu carrinho está vazio. Adicione doces e tortas para continuar.
+        </div> -->
+        <div id="cartItems" class="cart-items"></div>
+        <div id="cartSummary" class="cart-summary hidden">
+          <p>Total</p>
+          <strong id="cartTotal">R$ 0,00</strong>
+        </div>
+        <div class="cart-actions">
+          <button id="clearCart" class="clear-cart" type="button">
+            Limpar carrinho
+          </button>
+          <button id="buy" class="clear-cart" type="button">Pagamento</button>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
