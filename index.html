@@ -22,46 +22,62 @@
     </script>
   </head>
   <body>
-    <header>
-      <a href="#hero" id="headerLogoDiv">
-        <img src="img/logo.jpeg" alt="" id="headerLogo" />
-        <p>BONBONETTO</p>
-      </a>
-      <button class="menu-toggle" aria-expanded="false" aria-controls="sidebar">
-        ☰ Menu
-      </button>
-    </header>
+    <div id="heroHeader">
+      <header>
+        <a href="#hero" id="headerLogoDiv">
+          <img src="img/logo.jpeg" alt="" id="headerLogo" />
+          <p>BONBONETTO</p>
+        </a>
+        <button
+          class="menu-toggle"
+          aria-expanded="false"
+          aria-controls="sidebar"
+        >
+          ☰ Menu
+        </button>
+      </header>
 
-    <aside id="sidebar" class="sidebar">
-      <button class="close-sidebar" aria-label="Fechar menu">✕</button>
-      <nav class="sidebar-nav">
-        <a href="#fatias">Fatias Premium</a>
-        <a href="#cookies">Cookies</a>
-        <a href="#bolos">Bolos</a>
-        <a href="#doces">Doces Finos</a>
-        <a href="#tradicional">Linha Tradicional</a>
-        <a href="#caseiros">Bolos Caseiros</a>
-        <a href="#cafes">Cafés Especiais</a>
-        <a href="#fit">Linha Fit</a>
-      </nav>
-    </aside>
+      <aside id="sidebar" class="sidebar">
+        <button class="close-sidebar" aria-label="Fechar menu">✕</button>
+        <nav class="sidebar-nav">
+          <a href="#fatias">Fatias Premium</a>
+          <a href="#cookies">Cookies</a>
+          <a href="#bolos">Bolos</a>
+          <a href="#doces">Doces Finos</a>
+          <a href="#tradicional">Linha Tradicional</a>
+          <a href="#caseiros">Bolos Caseiros</a>
+          <a href="#cafes">Cafés Especiais</a>
+          <a href="#fit">Linha Fit</a>
+        </nav>
+      </aside>
 
-    <!-- <section class="banner">
+      <!-- <section class="banner">
       <h2>Descubra nossos doces artesanais premium</h2>
       <button>Peça Agora</button>
     </section> -->
-    <section id="hero">
-      <div id="logo" class="hidden">
-        <img src="img/logo.jpeg" alt="Logo Bonbonetto" />
-        <h1>BONBONETTO</h1>
-        <h2>CONFEITARIA ARTESANAL</h2>
-        <p>Feito com amor, para momentos únicos.</p>
-      </div>
-      <h3 id="heroFrase" class="hidden">
-        Transformando ingredientes em memórias inesquecíveis.
-      </h3>
-      <a href="#fatias" class="adicionarSacola hidden">Ver produtos</a>
-    </section>
+      <section id="hero">
+        <div id="logo" class="hidden">
+          <img src="img/logo.jpeg" alt="Logo Bonbonetto" />
+          <h1>BONBONETTO</h1>
+          <h2>CONFEITARIA ARTESANAL</h2>
+          <p>Feito com amor, para momentos únicos.</p>
+        </div>
+        <h3 id="heroFrase" class="hidden">
+          Transformando ingredientes em memórias inesquecíveis.
+        </h3>
+        <div id="heroButtons" class="hidden">
+          <a href="#fatias" class="adicionarSacola hidden" id="verProdutos"
+            >Ver produtos</a
+          >
+          <a href="https://wa.me/5531990787741" class="adicionarSacola hidden" id="whatsapp" target="_blank"
+            >WhatsApp</a
+          >
+          <a href="#footer" class="adicionarSacola hidden" id="contato"
+            >Contato</a
+          >
+        </div>
+      </section>
+    </div>
 
     <!-- Fatias Premium -->
     <section id="fatias" class="produtos">
@@ -283,5 +299,13 @@
       </div>
     </section>
     <script src="js/scripts.js"></script>
+    <footer id="footer">
+      <p>&copy2026 Bonbonetto <br />Todos os direitos reservados</p>
+      <div id="footerContacts">
+        <p>Telefone: (31)9 3881-8216</p>
+        <p>Email: bobonetto@gmail.com</p>
+        <p>CNPJ: 42.252.146/0001-74</p>
+      </div>
+    </footer>
   </body>
 </html>
