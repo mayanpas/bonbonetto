@@ -401,6 +401,7 @@ footer {
     width: 5rem;
   }
   #hero {
+    height: 115vh;
     justify-content: center;
     padding-top: 5rem;
     padding: 0.5rem;
@@ -464,7 +465,7 @@ footer {
     width: 5rem;
   }
   #hero {
-    height: 125vh;
+    height: 150vh;
     padding: 0.5rem;
     padding-bottom: 2rem;
     gap: 1rem;
