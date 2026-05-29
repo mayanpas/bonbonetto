@@ -14,21 +14,11 @@
   opacity: 1;
   transform: translateY(0);
 }
-body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100dvw;
-  height: 100dvh;
-  z-index: -1;
-  margin: 0;
-  background-color: #fdfaf6;
-  color: #4a2c2a;
-}
+
 body {
   font-family: "Georgia", serif;
-
+  background-color: #fdfaf6;
+  color: #4a2c2a;
   padding-top: env(safe-area-inset-top);
   padding-bottom: env(safe-area-inset-bottom);
   padding-left: env(safe-area-inset-left);
@@ -38,7 +28,7 @@ body {
   background-image: url(../img/heroBackground.png);
 }
 header {
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 100;
   width: calc(100% - env(safe-area-inset-left) - env(safe-area-inset-right));
@@ -276,12 +266,7 @@ header .menu-toggle:active {
   border: 1px solid #4a2c2a;
   color: #a67c52;
 }
-.banner {
-  text-align: center;
-  padding: 40px;
-  background-size: cover;
-  color: #4a2c2a;
-}
+
 .adicionarSacola {
   background-color: #d4af37;
   border: none;
@@ -457,7 +442,7 @@ footer {
   }
 }
 
-.hidden {
+/* .hidden {
   opacity: 0;
   transform: translateY(50px);
   transition: all 0.5s ease-out;
@@ -466,7 +451,7 @@ footer {
 .show {
   opacity: 1;
   transform: translateY(0);
-}
+} */
 
 /* Estilos aplicados APENAS quando a tela está na horizontal */
 @media screen and (orientation: landscape) and (max-height: 480px) {
