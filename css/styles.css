@@ -4,11 +4,6 @@
   padding: 0;
 }
 
-:root {
-  --safe-top: env(safe-area-inset-top);
-  --safe-top-fallback: constant(safe-area-inset-top);
-}
-
 .hidden {
   opacity: 0;
   transform: translateY(50px);
@@ -29,14 +24,6 @@ body {
   padding-left: env(safe-area-inset-left);
   padding-right: env(safe-area-inset-right);
 }
-#content {
-  padding-top: calc(3.5rem + var(--safe-top, var(--safe-top-fallback, 0)));
-}
-
-/* Páginas que não usam #content (ex: carrinho.html) */
-body > main {
-  padding-top: calc(3.5rem + var(--safe-top, var(--safe-top-fallback, 0)));
-}
 #heroHeader {
   background-image: url(../img/heroBackground.png);
 }
@@ -44,13 +31,8 @@ header {
   position: fixed;
   top: 0;
   z-index: 100;
-  left: 0;
-  right: 0;
-  width: 100%;
-  padding-top: calc(0.5rem + var(--safe-top, var(--safe-top-fallback, 0)));
-  padding-left: calc(1rem + env(safe-area-inset-left));
-  padding-right: calc(1rem + env(safe-area-inset-right));
-  padding-bottom: 0.5rem;
+  width: calc(100% - env(safe-area-inset-left) - env(safe-area-inset-right));
+  padding: 0.5rem 3rem;
   background-color: #f5e9dcd9;
   backdrop-filter: blur(8px);
   display: flex;
@@ -229,7 +211,7 @@ header .header-title {
   visibility: visible;
 }
 
-body::before {
+/* body::before {
   content: "";
   position: fixed;
   top: 0;
@@ -241,13 +223,13 @@ body::before {
   z-index: 150;
   transition: opacity 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   pointer-events: none;
-}
+} */
 
-body.sidebar-open::before {
+/* body.sidebar-open::before {
   background-color: rgba(0, 0, 0, 0.3);
   opacity: 1;
   pointer-events: auto;
-}
+} */
 
 .sidebar .close-sidebar {
   background: none;
@@ -400,10 +382,7 @@ footer {
 
 @media (max-width: 480px) {
   header {
-    padding-top: calc(0.5rem + var(--safe-top, var(--safe-top-fallback, 0)));
-    padding-left: calc(0.75rem + env(safe-area-inset-left));
-    padding-right: calc(0.75rem + env(safe-area-inset-right));
-    padding-bottom: 0.5rem;
+    padding: 0.5rem 1rem;
   }
   .header-actions {
     gap: 0.5rem;
@@ -419,7 +398,8 @@ footer {
     width: 5rem;
   }
   #hero {
-    height: 115vh;
+    height: 80dvh;
+    justify-content: center;
     padding-top: 5rem;
     padding: 0.5rem;
     gap: 1rem;
@@ -482,9 +462,9 @@ footer {
     width: 5rem;
   }
   #hero {
-    height: 150vh;
-    padding-top: 5rem;
+    justify-content: flex-end;
     padding: 0.5rem;
+    padding-bottom: 2rem;
     gap: 1rem;
   }
   #hero h1 {
