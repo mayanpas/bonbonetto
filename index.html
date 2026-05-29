@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bonbonetto</title>
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="shortcut icon" href="img/favicon3.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon3.png" type="image/x-icon" />
     <link
       rel="stylesheet"
       href="https://unpkg.com/lenis@1.3.23/dist/lenis.css"
@@ -23,7 +23,7 @@
     </script>
   </head>
   <body>
-    <div id="heroHeader">
+    <div id="content">
       <header>
         <a href="#hero" id="headerLogoDiv">
           <img src="img/logo.jpeg" alt="" id="headerLogo" />
@@ -31,7 +31,7 @@
         </a>
         <div class="header-actions">
           <a href="carrinho.html" class="cart-link" aria-label="Ver carrinho">
-            <img src="img/sacola.svg" alt="" class="icon">
+            <img src="img/sacola.svg" alt="" class="icon" />
             <span class="cart-count" aria-hidden="true">0</span>
           </a>
           <button
@@ -39,284 +39,287 @@
             aria-expanded="false"
             aria-controls="sidebar"
           >
-            <img src="img/menu.svg" alt="" class="icon"> Menu
+            <img src="img/menu.svg" alt="" class="icon" /> Menu
           </button>
         </div>
       </header>
+      <main>
+        <div id="heroHeader">
+          <aside id="sidebar" class="sidebar">
+            <button class="close-sidebar" aria-label="Fechar menu">✕</button>
+            <nav class="sidebar-nav">
+              <a href="#fatias">Fatias Premium</a>
+              <a href="#cookies">Cookies</a>
+              <a href="#bolos">Bolos</a>
+              <a href="#doces">Doces Finos</a>
+              <a href="#tradicional">Linha Tradicional</a>
+              <a href="#caseiros">Bolos Caseiros</a>
+              <a href="#cafes">Cafés Especiais</a>
+              <a href="#fit">Linha Fit</a>
+            </nav>
+          </aside>
 
-      <aside id="sidebar" class="sidebar">
-        <button class="close-sidebar" aria-label="Fechar menu">✕</button>
-        <nav class="sidebar-nav">
-          <a href="#fatias">Fatias Premium</a>
-          <a href="#cookies">Cookies</a>
-          <a href="#bolos">Bolos</a>
-          <a href="#doces">Doces Finos</a>
-          <a href="#tradicional">Linha Tradicional</a>
-          <a href="#caseiros">Bolos Caseiros</a>
-          <a href="#cafes">Cafés Especiais</a>
-          <a href="#fit">Linha Fit</a>
-        </nav>
-      </aside>
-
-      <!-- <section class="banner">
+          <!-- <section class="banner">
       <h2>Descubra nossos doces artesanais premium</h2>
       <button>Peça Agora</button>
     </section> -->
-      <section id="hero">
-        <div id="logo" class="hidden">
-          <img src="img/logo.jpeg" alt="Logo Bonbonetto" />
-          <h1>BONBONETTO</h1>
-          <h2>CONFEITARIA ARTESANAL</h2>
-          <p>Feito com amor, para momentos únicos.</p>
+          <section id="hero">
+            <div id="logo" class="hidden">
+              <img src="img/logo.jpeg" alt="Logo Bonbonetto" />
+              <h1>BONBONETTO</h1>
+              <h2>CONFEITARIA ARTESANAL</h2>
+              <p>Feito com amor, para momentos únicos.</p>
+            </div>
+            <h3 id="heroFrase" class="hidden">
+              Transformando ingredientes em memórias inesquecíveis.
+            </h3>
+            <div id="heroButtons" class="hidden">
+              <a href="#fatias" class="adicionarSacola hidden" id="verProdutos"
+                >Ver produtos</a
+              >
+              <a
+                href="https://wa.me/5531990787741"
+                class="adicionarSacola hidden"
+                id="whatsapp"
+                target="_blank"
+                >WhatsApp</a
+              >
+              <a href="#footer" class="adicionarSacola hidden" id="contato"
+                >Contato</a
+              >
+            </div>
+          </section>
         </div>
-        <h3 id="heroFrase" class="hidden">
-          Transformando ingredientes em memórias inesquecíveis.
-        </h3>
-        <div id="heroButtons" class="hidden">
-          <a href="#fatias" class="adicionarSacola hidden" id="verProdutos"
-            >Ver produtos</a
-          >
-          <a
-            href="https://wa.me/5531990787741"
-            class="adicionarSacola hidden"
-            id="whatsapp"
-            target="_blank"
-            >WhatsApp</a
-          >
-          <a href="#footer" class="adicionarSacola hidden" id="contato"
-            >Contato</a
-          >
+
+        <!-- Fatias Premium -->
+        <section id="fatias" class="produtos">
+          <h2 class="sectionTitle">Fatias Premium</h2>
+          <div class="produto">
+            <img src="img/totrtaHolandesa.jpeg" />
+            <h3>Torta Holandesa</h3>
+            <p>R$ 20,00</p>
+            <button class="adicionarSacola">Adicionar à Sacola</button>
+          </div>
+          <div class="produto">
+            <img src="img/tortaMaracuja.jpeg" />
+            <h3>Torta de Maracujá</h3>
+            <p>R$ 20,00</p>
+            <button class="adicionarSacola">Adicionar à Sacola</button>
+          </div>
+          <div class="produto">
+            <img src="img/tortaLimao.jpeg" />
+            <h3>Torta de Limão</h3>
+            <p>R$ 20,00</p>
+            <button class="adicionarSacola">Adicionar à Sacola</button>
+          </div>
+          <div class="produto">
+            <img src="img/tortaFerrero.jpeg" />
+            <h3>Torta Ferrero</h3>
+            <p>R$ 20,00</p>
+            <button class="adicionarSacola">Adicionar à Sacola</button>
+          </div>
+        </section>
+
+        <!-- Cookies -->
+        <section id="cookies" class="produtos">
+          <h2 class="sectionTitle">Cookies</h2>
+          <div class="produto">
+            <img src="img/chocolateBelga.jpeg" />
+            <h3>Cookie Belga</h3>
+            <p>R$ 20,00</p>
+            <button class="adicionarSacola">Adicionar à Sacola</button>
+          </div>
+          <div class="produto">
+            <img src="img/ninhoComNutella.jpeg" />
+            <h3>Ninho com Nutella</h3>
+            <p>R$ 20,00</p>
+            <button class="adicionarSacola">Adicionar à Sacola</button>
+          </div>
+          <div class="produto">
+            <img src="img/pistache.jpeg" />
+            <h3>Pistache</h3>
+            <p>R$ 20,00</p>
+            <button class="adicionarSacola">Adicionar à Sacola</button>
+          </div>
+          <div class="produto">
+            <img src="img/redVelvet.jpeg" />
+            <h3>Red Velvet</h3>
+            <p>R$ 20,00</p>
+            <button class="adicionarSacola">Adicionar à Sacola</button>
+          </div>
+        </section>
+
+        <!-- Bolos de Celebração -->
+        <section id="bolos" class="produtos">
+          <h2 class="sectionTitle">Bolos</h2>
+          <div class="produto">
+            <img src="img/chantinho.jpeg" />
+            <h3>Chantininho</h3>
+            <p>1kg — R$ 110</p>
+            <button class="adicionarSacola">Adicionar à Sacola</button>
+          </div>
+          <div class="produto">
+            <img src="img/buttercream.jpeg" />
+            <h3>Buttercream</h3>
+            <p>1kg — R$ 180</p>
+            <button class="adicionarSacola">Adicionar à Sacola</button>
+          </div>
+          <div class="produto">
+            <img src="img/pastaAmericana.jpeg" />
+            <h3>Pasta Americana</h3>
+            <p>1kg — R$ 250</p>
+            <button class="adicionarSacola">Adicionar à Sacola</button>
+          </div>
+          <div class="produto">
+            <img src="img/bentoCake.jpeg" />
+            <h3>Bento Cake</h3>
+            <p>500g — R$ 85</p>
+            <button class="adicionarSacola">Adicionar à Sacola</button>
+          </div>
+        </section>
+
+        <!-- Doces Finos -->
+        <section id="doces" class="produtos">
+          <h2 class="sectionTitle">Doces finos</h2>
+          <div class="produto">
+            <img src="img/mamasTiramisu.jpeg" />
+            <h3>Mamma’s Tiramisù</h3>
+            <p>R$ 10,00</p>
+            <button class="adicionarSacola">Adicionar à Sacola</button>
+          </div>
+          <div class="produto">
+            <img src="img/espressoIntenso.jpeg" />
+            <h3>Espresso Intenso</h3>
+            <p>R$ 8,00</p>
+            <button class="adicionarSacola">Adicionar à Sacola</button>
+          </div>
+          <div class="produto">
+            <img src="img/pistacheDeBronte.jpeg" />
+            <h3>Pistache de Bronte</h3>
+            <p>R$ 15,00</p>
+            <button class="adicionarSacola">Adicionar à Sacola</button>
+          </div>
+          <div class="produto">
+            <img src="img/amarettoNoir.jpeg" />
+            <h3>Amaretto Noir</h3>
+            <p>R$ 12,00</p>
+            <button class="adicionarSacola">Adicionar à Sacola</button>
+          </div>
+        </section>
+
+        <!-- Linha Tradicional -->
+        <section id="tradicional" class="produtos">
+          <h2 class="sectionTitle">Linha tradicional</h2>
+          <div class="produto">
+            <img src="img/brigadeiro gourmet.png" alt="" />
+            <h3>Brigadeiro Gourmet</h3>
+            <p>50 unid — R$ 80</p>
+            <button class="adicionarSacola">Adicionar à Sacola</button>
+          </div>
+          <div class="produto">
+            <img src="img/beijinho gourmet.png" alt="" />
+            <h3>Beijinho Cremoso</h3>
+            <p>50 unid — R$ 80</p>
+            <button class="adicionarSacola">Adicionar à Sacola</button>
+          </div>
+          <div class="produto">
+            <img src="img/casadinho.png" alt="" />
+            <h3>Casadinho</h3>
+            <p>50 unid — R$ 80</p>
+            <button class="adicionarSacola">Adicionar à Sacola</button>
+          </div>
+        </section>
+
+        <!-- Bolos Caseiros -->
+        <section id="caseiros" class="produtos">
+          <h2 class="sectionTitle">Bolos caseiros</h2>
+          <div class="produto">
+            <img src="img/bolosGeral.jpeg" alt="" />
+            <h3>Bolo Pequeno</h3>
+            <p>500g — R$ 20</p>
+            <button class="adicionarSacola">Adicionar à Sacola</button>
+          </div>
+          <div class="produto">
+            <img src="img/bolosGeral.jpeg" alt="" />
+            <h3>Bolo Médio</h3>
+            <p>800g — R$ 25</p>
+            <button class="adicionarSacola">Adicionar à Sacola</button>
+          </div>
+          <div class="produto">
+            <img src="img/bolosGeral.jpeg" alt="" />
+            <h3>Bolo Grande</h3>
+            <p>1,2kg — R$ 30</p>
+            <button class="adicionarSacola">Adicionar à Sacola</button>
+          </div>
+        </section>
+
+        <!-- Cafés Especiais -->
+        <section id="cafes" class="produtos">
+          <h2 class="sectionTitle">Cafés especiais</h2>
+          <div class="produto">
+            <img src="img/espresso.jpeg" alt="" />
+            <h3>Espresso</h3>
+            <p>50ml — R$ 7,50</p>
+            <button class="adicionarSacola">Adicionar à Sacola</button>
+          </div>
+          <div class="produto">
+            <img src="img/coadoArtesanal.jpeg" alt="" />
+            <h3>Coado Artesanal</h3>
+            <p>180ml — R$ 7</p>
+            <button class="adicionarSacola">Adicionar à Sacola</button>
+          </div>
+          <div class="produto">
+            <img src="img/capuccinoItaliano.jpeg" alt="" />
+            <h3>Cappuccino Italiano</h3>
+            <p>180ml — R$ 7</p>
+            <button class="adicionarSacola">Adicionar à Sacola</button>
+          </div>
+        </section>
+
+        <!-- Linha fit -->
+        <section id="fit" class="produtos">
+          <h2 class="sectionTitle">Linha fit</h2>
+          <div class="produto">
+            <img src="img/boloBananaComAveia.jpeg" alt="" />
+            <h3>Bolo de banana com aveia</h3>
+            <p>XXg — R$?</p>
+            <button class="adicionarSacola">Adicionar à Sacola</button>
+          </div>
+          <div class="produto">
+            <img src="img/brownieFitProteico.jpeg" alt="" />
+            <h3>Brownie fit proteico</h3>
+            <p>XXg — R$?</p>
+            <button class="adicionarSacola">Adicionar à Sacola</button>
+          </div>
+          <div class="produto">
+            <img src="img/cookieIntegralComCastanhas.jpeg" alt="" />
+            <h3>Cookie integral</h3>
+            <p>XXg — R$?</p>
+            <button class="adicionarSacola">Adicionar à Sacola</button>
+          </div>
+          <div class="produto">
+            <img src="img/docePoteZeroAcucar.jpeg" alt="" />
+            <h3>Doce no pote sem açúcar</h3>
+            <p>XXg — R$?</p>
+            <button class="adicionarSacola">Adicionar à Sacola</button>
+          </div>
+          <div class="produto">
+            <img src="img/hamburguerDoceFit.jpeg" alt="" />
+            <h3>Hambúrguer doce fit</h3>
+            <p>XXg — R$?</p>
+            <button class="adicionarSacola">Adicionar à Sacola</button>
+          </div>
+        </section>
+        <script src="js/scripts.js"></script>
+      </main>
+      <footer id="footer">
+        <p>&copy2026 Bonbonetto <br />Todos os direitos reservados</p>
+        <div id="footerContacts">
+          <p>Telefone: (31)9 3881-8216</p>
+          <p>Email: bobonetto@gmail.com</p>
+          <p>CNPJ: 42.252.146/0001-74</p>
         </div>
-      </section>
+      </footer>
     </div>
-
-    <!-- Fatias Premium -->
-    <section id="fatias" class="produtos">
-      <h2 class="sectionTitle">Fatias Premium</h2>
-      <div class="produto">
-        <img src="img/totrtaHolandesa.jpeg" />
-        <h3>Torta Holandesa</h3>
-        <p>R$ 20,00</p>
-        <button class="adicionarSacola">Adicionar à Sacola</button>
-      </div>
-      <div class="produto">
-        <img src="img/tortaMaracuja.jpeg" />
-        <h3>Torta de Maracujá</h3>
-        <p>R$ 20,00</p>
-        <button class="adicionarSacola">Adicionar à Sacola</button>
-      </div>
-      <div class="produto">
-        <img src="img/tortaLimao.jpeg" />
-        <h3>Torta de Limão</h3>
-        <p>R$ 20,00</p>
-        <button class="adicionarSacola">Adicionar à Sacola</button>
-      </div>
-      <div class="produto">
-        <img src="img/tortaFerrero.jpeg" />
-        <h3>Torta Ferrero</h3>
-        <p>R$ 20,00</p>
-        <button class="adicionarSacola">Adicionar à Sacola</button>
-      </div>
-    </section>
-
-    <!-- Cookies -->
-    <section id="cookies" class="produtos">
-      <h2 class="sectionTitle">Cookies</h2>
-      <div class="produto">
-        <img src="img/chocolateBelga.jpeg" />
-        <h3>Cookie Belga</h3>
-        <p>R$ 20,00</p>
-        <button class="adicionarSacola">Adicionar à Sacola</button>
-      </div>
-      <div class="produto">
-        <img src="img/ninhoComNutella.jpeg" />
-        <h3>Ninho com Nutella</h3>
-        <p>R$ 20,00</p>
-        <button class="adicionarSacola">Adicionar à Sacola</button>
-      </div>
-      <div class="produto">
-        <img src="img/pistache.jpeg" />
-        <h3>Pistache</h3>
-        <p>R$ 20,00</p>
-        <button class="adicionarSacola">Adicionar à Sacola</button>
-      </div>
-      <div class="produto">
-        <img src="img/redVelvet.jpeg" />
-        <h3>Red Velvet</h3>
-        <p>R$ 20,00</p>
-        <button class="adicionarSacola">Adicionar à Sacola</button>
-      </div>
-    </section>
-
-    <!-- Bolos de Celebração -->
-    <section id="bolos" class="produtos">
-      <h2 class="sectionTitle">Bolos</h2>
-      <div class="produto">
-        <img src="img/chantinho.jpeg" />
-        <h3>Chantininho</h3>
-        <p>1kg — R$ 110</p>
-        <button class="adicionarSacola">Adicionar à Sacola</button>
-      </div>
-      <div class="produto">
-        <img src="img/buttercream.jpeg" />
-        <h3>Buttercream</h3>
-        <p>1kg — R$ 180</p>
-        <button class="adicionarSacola">Adicionar à Sacola</button>
-      </div>
-      <div class="produto">
-        <img src="img/pastaAmericana.jpeg" />
-        <h3>Pasta Americana</h3>
-        <p>1kg — R$ 250</p>
-        <button class="adicionarSacola">Adicionar à Sacola</button>
-      </div>
-      <div class="produto">
-        <img src="img/bentoCake.jpeg" />
-        <h3>Bento Cake</h3>
-        <p>500g — R$ 85</p>
-        <button class="adicionarSacola">Adicionar à Sacola</button>
-      </div>
-    </section>
-
-    <!-- Doces Finos -->
-    <section id="doces" class="produtos">
-      <h2 class="sectionTitle">Doces finos</h2>
-      <div class="produto">
-        <img src="img/mamasTiramisu.jpeg" />
-        <h3>Mamma’s Tiramisù</h3>
-        <p>R$ 10,00</p>
-        <button class="adicionarSacola">Adicionar à Sacola</button>
-      </div>
-      <div class="produto">
-        <img src="img/espressoIntenso.jpeg" />
-        <h3>Espresso Intenso</h3>
-        <p>R$ 8,00</p>
-        <button class="adicionarSacola">Adicionar à Sacola</button>
-      </div>
-      <div class="produto">
-        <img src="img/pistacheDeBronte.jpeg" />
-        <h3>Pistache de Bronte</h3>
-        <p>R$ 15,00</p>
-        <button class="adicionarSacola">Adicionar à Sacola</button>
-      </div>
-      <div class="produto">
-        <img src="img/amarettoNoir.jpeg" />
-        <h3>Amaretto Noir</h3>
-        <p>R$ 12,00</p>
-        <button class="adicionarSacola">Adicionar à Sacola</button>
-      </div>
-    </section>
-
-    <!-- Linha Tradicional -->
-    <section id="tradicional" class="produtos">
-      <h2 class="sectionTitle">Linha tradicional</h2>
-      <div class="produto">
-        <img src="img/brigadeiro gourmet.png" alt="" />
-        <h3>Brigadeiro Gourmet</h3>
-        <p>50 unid — R$ 80</p>
-        <button class="adicionarSacola">Adicionar à Sacola</button>
-      </div>
-      <div class="produto">
-        <img src="img/beijinho gourmet.png" alt="" />
-        <h3>Beijinho Cremoso</h3>
-        <p>50 unid — R$ 80</p>
-        <button class="adicionarSacola">Adicionar à Sacola</button>
-      </div>
-      <div class="produto">
-        <img src="img/casadinho.png" alt="" />
-        <h3>Casadinho</h3>
-        <p>50 unid — R$ 80</p>
-        <button class="adicionarSacola">Adicionar à Sacola</button>
-      </div>
-    </section>
-
-    <!-- Bolos Caseiros -->
-    <section id="caseiros" class="produtos">
-      <h2 class="sectionTitle">Bolos caseiros</h2>
-      <div class="produto">
-        <img src="img/bolosGeral.jpeg" alt="" />
-        <h3>Bolo Pequeno</h3>
-        <p>500g — R$ 20</p>
-        <button class="adicionarSacola">Adicionar à Sacola</button>
-      </div>
-      <div class="produto">
-        <img src="img/bolosGeral.jpeg" alt="" />
-        <h3>Bolo Médio</h3>
-        <p>800g — R$ 25</p>
-        <button class="adicionarSacola">Adicionar à Sacola</button>
-      </div>
-      <div class="produto">
-        <img src="img/bolosGeral.jpeg" alt="" />
-        <h3>Bolo Grande</h3>
-        <p>1,2kg — R$ 30</p>
-        <button class="adicionarSacola">Adicionar à Sacola</button>
-      </div>
-    </section>
-
-    <!-- Cafés Especiais -->
-    <section id="cafes" class="produtos">
-      <h2 class="sectionTitle">Cafés especiais</h2>
-      <div class="produto">
-        <img src="img/espresso.jpeg" alt="" />
-        <h3>Espresso</h3>
-        <p>50ml — R$ 7,50</p>
-        <button class="adicionarSacola">Adicionar à Sacola</button>
-      </div>
-      <div class="produto">
-        <img src="img/coadoArtesanal.jpeg" alt="" />
-        <h3>Coado Artesanal</h3>
-        <p>180ml — R$ 7</p>
-        <button class="adicionarSacola">Adicionar à Sacola</button>
-      </div>
-      <div class="produto">
-        <img src="img/capuccinoItaliano.jpeg" alt="" />
-        <h3>Cappuccino Italiano</h3>
-        <p>180ml — R$ 7</p>
-        <button class="adicionarSacola">Adicionar à Sacola</button>
-      </div>
-    </section>
-
-    <!-- Linha fit -->
-    <section id="fit" class="produtos">
-      <h2 class="sectionTitle">Linha fit</h2>
-      <div class="produto">
-        <img src="img/boloBananaComAveia.jpeg" alt="" />
-        <h3>Bolo de banana com aveia</h3>
-        <p>XXg — R$?</p>
-        <button class="adicionarSacola">Adicionar à Sacola</button>
-      </div>
-      <div class="produto">
-        <img src="img/brownieFitProteico.jpeg" alt="" />
-        <h3>Brownie fit proteico</h3>
-        <p>XXg — R$?</p>
-        <button class="adicionarSacola">Adicionar à Sacola</button>
-      </div>
-      <div class="produto">
-        <img src="img/cookieIntegralComCastanhas.jpeg" alt="" />
-        <h3>Cookie integral</h3>
-        <p>XXg — R$?</p>
-        <button class="adicionarSacola">Adicionar à Sacola</button>
-      </div>
-      <div class="produto">
-        <img src="img/docePoteZeroAcucar.jpeg" alt="" />
-        <h3>Doce no pote sem açúcar</h3>
-        <p>XXg — R$?</p>
-        <button class="adicionarSacola">Adicionar à Sacola</button>
-      </div>
-      <div class="produto">
-        <img src="img/hamburguerDoceFit.jpeg" alt="" />
-        <h3>Hambúrguer doce fit</h3>
-        <p>XXg — R$?</p>
-        <button class="adicionarSacola">Adicionar à Sacola</button>
-      </div>
-    </section>
-    <script src="js/scripts.js"></script>
-    <footer id="footer">
-      <p>&copy2026 Bonbonetto <br />Todos os direitos reservados</p>
-      <div id="footerContacts">
-        <p>Telefone: (31)9 3881-8216</p>
-        <p>Email: bobonetto@gmail.com</p>
-        <p>CNPJ: 42.252.146/0001-74</p>
-      </div>
-    </footer>
   </body>
 </html>
