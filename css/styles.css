@@ -42,6 +42,7 @@ body {
 }
 #sections{
     background-color: #fdfaf6;
+    padding-bottom: 2rem;
 }
 header {
   position: fixed;
