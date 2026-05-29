@@ -26,6 +26,9 @@ body {
 }
 #heroHeader {
   background-image: url(../img/heroBackground.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 header {
   position: fixed;
@@ -398,7 +401,6 @@ footer {
     width: 5rem;
   }
   #hero {
-    height: 80dvh;
     justify-content: center;
     padding-top: 5rem;
     padding: 0.5rem;
@@ -462,7 +464,7 @@ footer {
     width: 5rem;
   }
   #hero {
-    justify-content: flex-end;
+    height: 125vh;
     padding: 0.5rem;
     padding-bottom: 2rem;
     gap: 1rem;
