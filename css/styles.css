@@ -24,11 +24,24 @@ body {
   padding-left: env(safe-area-inset-left);
   padding-right: env(safe-area-inset-right);
 }
-#heroHeader {
+#heroHeader::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100vw;
+  z-index: -1;
   background-image: url(../img/heroBackground.png);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#heroHeader {
+  /* background-color: #4a2c2a; */
+}
+#sections{
+    background-color: #fdfaf6;
 }
 header {
   position: fixed;
